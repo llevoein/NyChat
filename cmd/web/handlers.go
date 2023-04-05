@@ -52,11 +52,7 @@ func createNote(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost {
 
 		w.Header().Set("Allow", http.MethodPost)
-		//w.Header()["Date"] = nil //если необходимо убрать заголовок.
 		http.Error(w, "Method closed", 405)
-		/*w.WriteHeader(405)
-		fmt.Fprintf(w, "Get method disabled")
-		*/
 
 		return
 	}
