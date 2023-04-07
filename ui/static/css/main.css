@@ -8,6 +8,7 @@
 
 html, body {
     height: 100%;
+
 }
 
 body {
@@ -18,16 +19,104 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-image: url(../img/gifs/1.gif);
+    background-size: cover;
+    overflow: hidden;
+    animation-name: changer_bgi;
+    animation-duration: 100s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
+@keyframes changer_bgi{
+    0%{
+      background-image: url(../img/gifs/1.gif);
+    }
+    10%{
+        background-image: url(../img/gifs/2.gif);
+      }
+    20%{
+        background-image: url(../img/gifs/3.gif);
+      }
+    30%{
+        background-image: url(../img/gifs/4.gif);
+      }
+    40%{
+        background-image: url(../img/gifs/5.gif);
+      }
+    50%{
+        background-image: url(../img/gifs/6.gif);
+      }
+    60%{
+        background-image: url(../img/gifs/7.gif);
+      }
+    70%{
+        background-image: url(../img/gifs/8.gif);
+      }
+    80%{
+        background-image: url(../img/gifs/9.gif);
+      }
+
+    90%{
+        background-image: url(../img/gifs/10.gif);
+      }
+    100%{
+        background-image: url(../img/gifs/11.gif);
+      }  
+ }
+
+
+ .main_background-image {
+    background-color: #333;
+    width: 100px;
+    height: 100px;
+ }
 .nav-wrapper_header {
     color: #fff;
     background-color: #2f2f2f;
+    opacity: 0%;
 }
 
 .material-symbols-outlined {
     line-height: unset;
     padding: 0 15px;
+}
+
+.main_body-player{
+    display: flex;
+    justify-content: center;
+}
+
+.main_body-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.main_body__left-line {
+
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    height: 500px;
+}
+.main_body__right-line {
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    height: 500px;
+}
+
+.main_body__text-editor {
+    width: 40%;
+}
+
+.main_body__text-editor textarea {
+    background-color: #2d2d2d;
+    opacity: 50%;
+    color: #d2d2d2;
+    padding: 10px 10px;
+    border-radius: 6px;
+    height: 60%;
 }
 
 main {
@@ -38,7 +127,6 @@ main {
 }
 
 nav {
-    border-bottom: 1px solid #E4E5E7;
     padding-bottom: 15px;
     background: #F7F9FA;
     height: 60px;

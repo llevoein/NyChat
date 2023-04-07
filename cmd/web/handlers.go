@@ -19,6 +19,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 		"./ui/html/home.page.tmpl",
 		"./ui/html/base.layout.tmpl",
 		"./ui/html/footer.partial.tmpl",
+		"./ui/html/player.layout.tmpl",
 	}
 
 	ts, err := template.ParseFiles(files...)
@@ -52,11 +53,7 @@ func createNote(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost {
 
 		w.Header().Set("Allow", http.MethodPost)
-		//w.Header()["Date"] = nil //если необходимо убрать заголовок.
 		http.Error(w, "Method closed", 405)
-		/*w.WriteHeader(405)
-		fmt.Fprintf(w, "Get method disabled")
-		*/
 
 		return
 	}

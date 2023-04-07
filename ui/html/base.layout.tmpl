@@ -6,17 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    
+    <link rel="icon" href="../static/img/icon/favicon.png" type="image/x-icon">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- local css files -->
+    <link rel='stylesheet' href='../static/css/player.css'>
     <link rel='stylesheet' href='../static/css/main.css'>
    
 
@@ -38,16 +37,35 @@
               </ul>
             </div>
           </nav>
-          <a href="/">NyChat</a>
     </header>
+    <div class="main_background-image">
+      <!--<button onclick="changeBg()"></button>-->
+    </div>
 
-    <div class="container">
-        <div><a href="/">Home page</a></div>
-        <main>
-            {{template "main" .}}
-        </main>
+    <div class="main_body-player">
+       {{template "player" .}}
+    </div>
+
+    <div class="main_body-content">
+        <div class="main_body__left-line">
+
+        </div>
+        <div class="main_body__text-editor">
+                <div class="text_editor">
+                    <textarea name="NyChat" id="NyChat-id"></textarea>
+                </div>
+                <main>
+                    {{template "main" .}}
+                </main>
+        </div>
+        <div class="main_body__right-line">
+
+        </div>
     </div>
     {{template "footer" .}}
+    <script src="../static/js/change_gif.js"></script>
+    <script src="../static/js/player.js" type="module"></script>
+
 </body>
 </html>
 
