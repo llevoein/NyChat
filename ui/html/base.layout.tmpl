@@ -22,6 +22,12 @@
     <title>{{template "title" .}} - NyChat</title>
 </head>
 <body>
+  <!--<div class="body_line">
+    <div class="body_line__top"></div>
+    <div class="body_line__right"></div>
+    <div class="body_line__bottom"></div>
+    <div class="body_line__left"></div>
+  </div>-->
     <header>
         <nav class="nav-wrapper_header">
             <div class="nav-wrapper">
@@ -41,27 +47,9 @@
     <div class="main_background-image">
       <!--<button onclick="changeBg()"></button>-->
     </div>
-
-    <div class="main_body-player">
-       {{template "player" .}}
-    </div>
-
-    <div class="main_body-content">
-        <div class="main_body__left-line">
-
-        </div>
-        <div class="main_body__text-editor">
-                <div class="text_editor">
-                    <textarea name="NyChat" id="NyChat-id"></textarea>
-                </div>
-                <main>
-                    {{template "main" .}}
-                </main>
-        </div>
-        <div class="main_body__right-line">
-
-        </div>
-    </div>
+    <main>
+      {{template "main" .}}
+    </main>
     {{template "footer" .}}
     <script src="../static/js/change_gif.js"></script>
     <script src="../static/js/player.js" type="module"></script>

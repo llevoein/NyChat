@@ -3,5 +3,15 @@
 {{define "title"}}  {{end}}
 
 {{define "main"}}
+<div class="main_body-player">
+       {{template "player" .}}
+    </div>
 
+    <div class="main_body-content">
+       <div class="main_body__text-editor">
+                <div class="text_editor">
+                    <textarea name="NyChat" id="NyChat-id"></textarea>
+                </div>
+        </div>
+    </div>
 {{end}}
