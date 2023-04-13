@@ -60,3 +60,7 @@ func createNote(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprintf(w, "Create new note")
 }
+
+/*func gifsContainer(w http.ResponseWriter, r *http.Request) {
+
+}*/

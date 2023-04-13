@@ -20,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url(../img/gifs/1.gif);
+    transition: background-image 2s ease-in-out;
     background-size: cover;
     overflow: hidden;
     animation-name: changer_bgi;
@@ -27,44 +28,6 @@ body {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-
-@keyframes changer_bgi{
-    0%{
-      background-image: url(../img/gifs/1.gif);
-    }
-    10%{
-        background-image: url(../img/gifs/2.gif);
-      }
-    20%{
-        background-image: url(../img/gifs/3.gif);
-      }
-    30%{
-        background-image: url(../img/gifs/4.gif);
-      }
-    40%{
-        background-image: url(../img/gifs/5.gif);
-      }
-    50%{
-        background-image: url(../img/gifs/6.gif);
-      }
-    60%{
-        background-image: url(../img/gifs/7.gif);
-      }
-    70%{
-        background-image: url(../img/gifs/8.gif);
-      }
-    80%{
-        background-image: url(../img/gifs/9.gif);
-      }
-
-    90%{
-        background-image: url(../img/gifs/10.gif);
-      }
-    100%{
-        background-image: url(../img/gifs/11.gif);
-      }  
- }
-
 
 .nav-wrapper_header {
     color: #fff;

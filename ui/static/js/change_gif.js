@@ -54,25 +54,26 @@ p.css("background-image","url("+url[curentImageIndex++] + ")");
 if(curentImageIndex>= url.length){curentImageIndex = 0}
 }, 1000);*/
 
-function changeBg(){
-    const images = [
-    "url(../img/gifs/1.gif)",
-    "url(../img/gifs/2.gif)",
-    "url(../img/gifs/3.gif)",
-    "url(../img/gifs/4.gif)",
-    "url(../img/gifs/5.gif)",
-    "url(../img/gifs/6.gif)",
-    "url(../img/gifs/7.gif)",
-    "url(../img/gifs/8.gif)",
-    "url(../img/gifs/9.gif)",
-    "url(../img/gifs/10.gif)",
-    "url(../img/gifs/11.gif)",
-    "url(../img/gifs/12.gif)",];
-
-    const serction = document.querySelector('body')
-    const bg = images[Math.floor(Math.random()*images.length)];
-    serction.style.backgroundImage = bg;
-
-
-    setInterval(changeBg, 1000)
-}
+const images = [
+    "static/img/gifs/1.gif",
+    "static/img/gifs/2.gif",
+    "static/img/gifs/3.gif",
+    "static/img/gifs/4.gif",
+    "static/img/gifs/5.gif",
+    "static/img/gifs/6.gif",
+    "static/img/gifs/7.gif",
+    "static/img/gifs/8.gif",
+    "static/img/gifs/9.gif",
+    "static/img/gifs/10.gif",
+    "static/img/gifs/11.gif",
+    "static/img/gifs/12.gif"
+  ];
+  
+  let currentImageIndex = 1;
+  
+  function changeBackgroundImage() {
+    document.body.style.backgroundImage = `url(${images[currentImageIndex]})`;
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+  }
+  
+  setInterval(changeBackgroundImage, 10000);

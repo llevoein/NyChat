@@ -11,6 +11,7 @@ func main() {
 	mux.HandleFunc("/", home)
 	mux.HandleFunc("/note", showNote)
 	mux.HandleFunc("/note/create", createNote)
+	//mux.HandleFunc("/img/gifs", gifsContainer)
 
 	fileServer := http.FileServer(http.Dir("./ui/static/"))
 	mux.Handle("/static/", http.StripPrefix("/static", fileServer))
