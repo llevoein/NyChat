@@ -14,7 +14,8 @@ let muteState = 'unmute';
 
 const playAnimation = lottieWeb.loadAnimation({
   container: playIconContainer,
-  path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/pause/pause.json',
+  //path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/pause/pause.json',
+  path: '../static/img/icon/pause.json',
   renderer: 'svg',
   loop: false,
   autoplay: false,
@@ -78,3 +79,9 @@ volumeSlider.addEventListener('input', (e) => {
     outputContainer.textContent = value;
     audio.volume = value / 100;
 });
+
+/*const pixel_button = document.getElementsByClassName("played");
+const pixel_buttonPressed = (e) => {
+    e.target.classList.toggle("paused");
+}
+pixel_button.addEventListener("click", pixel_buttonPressed);*/

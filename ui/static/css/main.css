@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url(../img/gifs/1.gif);
-    transition: background-image 2s ease-in-out;
+    /*transition: background-image 2s ease-in-out;*/
     background-size: cover;
     overflow: hidden;
     animation-name: changer_bgi;

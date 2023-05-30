@@ -151,25 +151,49 @@ input[type="range"]::-ms-fill-upper {
   background-color: #2d2d2d;
   position: absolute;
 }
-.play_button .item1 {
+.played .item1 {
   height: 30px;
 }
-.play_button .item2 {
+.played .item2 {
   height: 6px;
   top: 6px;
   left: 6px;
 }
-.play_button .item3 {
+.played .item3 {
   height: 6px;
   top: 12px;
   left: 6px;
 }
-.play_button .item4 {
+.played .item4 {
   height: 6px;
   top: 18px;
   left: 6px;
 }
-.play_button .item5 {
+.played .item5 {
+  height: 6px;
+  top: 12px;
+  left: 12px;
+}
+
+.stoped .item1 {
+  height: 30px;
+}
+.stoped .item2 {
+  height: 6px;
+  top: 6px;
+  left: 6px;
+}
+.stoped .item3 {
+  height: 6px;
+  top: 12px;
+  left: 6px;
+}
+.stoped .item4 {
+  height: 6px;
+  top: 18px;
+  left: 6px;
+}
+.stoped .item5 {
   height: 6px;
   top: 12px;
   left: 12px;
